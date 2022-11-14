@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>El título de mi página</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="/js/crudClientes.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>ESTE ES EL SISTEMA ESTOCOLMO</h1>
+    <nav>
+        <ul>
+		    <li><a href="index.html">INICIO</a></li>
+	      </ul>
+    </nav>
+   </header>
+   <section>
+     <form >
+        <div>
+          <label>ID:</label>
+          <input type="text" name="id" id="id">
+       </div>
+       <div>
+         <label>CLIENTE:</label>
+         <input type="text" name="cliente" id="cliente">
+       </div>
+       <div>
+         <label>FECHA :</label>
+         <input type="text" name="fecha" id="fecha">
+       </div>
+       <div>
+       <label>VALOR:</label>
+       <input type="text" name="valor" id="valor">
+       </div>
+
+       
+
+
+       <div  class="botones">
+       <input type="button" value="INSERTAR" onclick="anadir()">
+       <input type="button" value="BORRAR" onclick="eliminar()">
+       <input type="button" value="BUSCAR" onclick="mostrar()">
+       <input type="button" value="ACTUALIZAR" onclick="editar()">
+       <input type="button" value="VER LISTA" onclick="ver()">
+       <br>
+       </div>       
+     </form>     
+   </section>
+   	
+
+    <table id="tabla">
+     
+    </table> 
+
+
+    <div>
+      <label>TOTAL VENTAS:</label>
+      <input type="text" name="tot" id="tot" readonly disabled>
+    </div>
+   
+
+  </body>
+</html>

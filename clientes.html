@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>El título de mi página</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="/js/crudClientes.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>ESTE ES EL SISTEMA ESTOCOLMO</h1>
+    <nav>
+        <ul>
+		    <li><a href="index.html">INICIO</a></li>
+	      </ul>
+    </nav>
+   </header>
+   <section>
+     <form >
+        <div>
+          <label>ID :</label>
+          <input type="text" name="id" id="id">
+       </div>
+       <div>
+         <label>NOMBRE :</label>
+         <input type="text" name="nombre" id="nombre">
+       </div>
+       <div>
+         <label>TELEFONO :</label>
+         <input type="text" name="telefono" id="telefono">
+       </div>
+       <div>
+       <label>CIUDAD :</label>
+       <input type="text" name="ciudad" id="ciudad">
+       </div>
+       <div  class="botones">
+        <input type="button" value="INSERTAR" onclick="anadir()">
+        <input type="button" value="BORRAR" onclick="eliminar()">
+        <input type="button" value="BUSCAR" onclick="mostrar()">
+        <input type="button" value="ACTUALIZAR" onclick="editar()">
+        <input type="button" value="VER LISTA" onclick="ver()">
+       <br>       
+       </div>
+
+       </div>
+       </div>
+     </form>     
+   </section>
+
+   <table id="tabla">
+    <tr>
+     
+     </tr>
+    </table>
+    <div>
+      <label>NUMERO DE CLIENTES:</label>
+      <input type="text" name="num" id="num">
+    </div>
+  </body>
+</html>
